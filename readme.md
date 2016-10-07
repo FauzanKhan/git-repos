@@ -28,7 +28,7 @@ OR
 ## Architectural Decisions
 
 ####Project Structure
-I'm using a completely different project structure than the original boilerplate as I saw this as a good opportunity for me to create my own angular boilerplate that I can use in future.
+
 ```
 Project
 	|-app
