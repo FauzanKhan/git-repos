@@ -1,5 +1,5 @@
 <div class="user-info" ng-if="isDataAvailable">
-  <img src="{{user.avatar_url}}" alt="" height="200px">
+  <img src="{{user.avatar_url}}" alt="" height="200px" ng-if="user.avatar_url">
   <h1>
     <a class="text-primary text-no-decoration" href="{{user.html_url}}" target="_blank">{{user.login}}</a>
   </h1>
