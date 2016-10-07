@@ -2,7 +2,7 @@ app.controller('userController', ['$scope', '$routeParams', '$http', 'userFactor
 
   var username = $routeParams.username;
 
-  var getUserInfo = function() {
+  this.getUserInfo = function() {
     if(!userFactory.selectedUser) {
       $http.get('https://api.github.com/users/' + username).then(function(res) {
         $scope.user = res.data;
@@ -13,7 +13,7 @@ app.controller('userController', ['$scope', '$routeParams', '$http', 'userFactor
     }
   }
 
-  var getRepos = function() {
+  this.getRepos = function() {
     $http.get('https://api.github.com/users/' + username + '/repos').then(function(res){
       if(res.status == 200) {
         $scope.message = res.data.length > 0 ? null : messages.noRepos;
@@ -27,13 +27,13 @@ app.controller('userController', ['$scope', '$routeParams', '$http', 'userFactor
     });
   }
 
-  var init = function() {
+  this.init = function() {
     $scope.message = messages.fetchingData;
     $scope.isDataAvailable = false;
-    getUserInfo();
-    getRepos();
+    this.getUserInfo();
+    this.getRepos();
   };
 
-  init();
+  this.init();
 
 }]);

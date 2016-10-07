@@ -1,4 +1,4 @@
-describe("Search Controller", function() {
+describe('Search Controller', function() {
 
   var $rootScope, $scope, controller;
   beforeEach(function() {
@@ -10,20 +10,13 @@ describe("Search Controller", function() {
     });
   });
 
-  describe("Init", function() {
+  it('Should not display a message initially', function() {
+    expect($scope.message).toBeUndefined();
+  });
 
-    it("Sets displays a message while search is in progress", function() {
-      expect($scope.message).toBeUndefined();
-      $scope.searchUser();
-      expect($scope.message).toBeDefined();
-    });
-
-    it("Sets displays a message while search is in progress", function() {
-      expect($scope.message).toBeUndefined();
-      $scope.searchUser();
-      expect($scope.message).toBeDefined();
-    });
-
-  })
+  it('Displays a message while search is in progress', function() {
+    $scope.searchUser();
+    expect($scope.message).toBeDefined();
+  });
 
 })
