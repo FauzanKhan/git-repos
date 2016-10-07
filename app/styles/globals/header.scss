@@ -1,0 +1,14 @@
+.header{
+  text-align: center;
+}
+
+.header__brand {
+  width: 230px;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 240px) {
+  .header__brand {
+    width: 120px;
+  }
+}

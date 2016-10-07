@@ -1,0 +1,171 @@
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.text-center {
+  text-align: center; }
+
+.text-primary {
+  color: #0957A4; }
+
+.text-secondary {
+  color: #F56635; }
+
+.text-large {
+  font-size: 24px; }
+
+.text-no-decoration {
+  text-decoration: none; }
+
+.inline-block {
+  display: inline-block; }
+
+.form-element {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .form-element label {
+    font-size: 12px; }
+  .form-element input, .form-element select {
+    height: 32px;
+    width: 95%;
+    padding-left: 10px;
+    border: 1px solid #EAEAEA; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+@media screen and (max-width: 540px) {
+  .hide-on-medium-below {
+    display: none; } }
+
+.header {
+  text-align: center; }
+
+.header__brand {
+  width: 230px;
+  padding: 20px 0; }
+
+@media screen and (max-width: 240px) {
+  .header__brand {
+    width: 120px; } }
+
+body {
+  background: #FDFDFD;
+  margin: 0;
+  font-family: "Roboto", tahoma;
+  font-weight: 300;
+  color: #333; }
+
+p {
+  margin-top: 0; }
+
+.search-container {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.search-input {
+  font-size: 28px;
+  font-style: italic;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #EAEAEA; }
+  .search-input:focus {
+    outline: none;
+    border: 1px solid #d1d1d1; }
+
+.result-container {
+  max-height: 400px;
+  overflow: auto;
+  border-bottom: 1px solid #EAEAEA; }
+
+.results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.results-list__item {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #EAEAEA;
+  border-top: none;
+  cursor: pointer; }
+  .results-list__item:hover {
+    background: #EAEAEA; }
+
+.result-item__image {
+  display: table-cell;
+  margin-right: 20px; }
+
+.result-item__name {
+  display: table-cell;
+  vertical-align: middle;
+  color: #0957A4;
+  font-size: 24px;
+  padding-left: 20px; }
+
+.message-container {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 22px;
+  font-style: italic; }
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    width: 90%; } }
+
+.user-info {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top; }
+
+.user-repos {
+  display: inline-block;
+  width: 70%;
+  margin-left: 40px;
+  vertical-align: top; }
+
+.repo-list__item {
+  padding: 10px;
+  border-bottom: 1px solid #EAEAEA; }
+
+.repo {
+  width: 100%; }
+
+.repo__link {
+  text-decoration: none;
+  color: #0957A4;
+  font-size: 18px; }
+
+.repo__info {
+  font-size: 14px;
+  color: #b7b7b7; }
+
+.divider {
+  padding: 0 5px; }
+
+@media screen and (max-width: 1024px) {
+  .repo-list {
+    padding-left: 0; }
+  .user-repos, .user-info {
+    display: block;
+    width: auto;
+    margin: 0; }
+  .user-info {
+    text-align: center; } }

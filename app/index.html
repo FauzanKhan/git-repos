@@ -1,0 +1,24 @@
+<!Doctype html>
+<html ng-app="gitRepos">
+	<head>
+		<title>GitRepos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://github.com/apple-touch-icon-180x180.png" rel="shortcut icon" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.css">
+	</head>
+	<body ng-controller="mainController">
+    <header class="header">
+      <div class="container">
+        <a href="/" title="home">
+            <img class="header__brand" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png" alt="brand-logo">
+        </a>
+      </div>
+    </header>
+	<div class="app-wrapper container" ng-view>
+
+    </div>
+    <script type="text/javascript" src="js/vendor.js"></script>
+    <script type="text/javascript" src="js/app.built.js"></script>
+	</body>
+</html>

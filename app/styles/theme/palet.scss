@@ -1,0 +1,13 @@
+$palette: (
+  primary: #0957A4,
+  secondary: #F56635,
+  white: #FFF,
+  gray: #EAEAEA
+);
+$primary-color: map-get($palette, primary);
+$secondary-color: map-get($palette, secondary);
+$gray: map-get($palette, gray);
+$gray-light: #FDFDFD;
+$white: map-get($palette, white);
+$primary-text-color: #333;
+

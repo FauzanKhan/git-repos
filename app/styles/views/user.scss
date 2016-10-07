@@ -1,0 +1,51 @@
+.user-info {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+.user-repos {
+  display: inline-block;
+  width: 70%;
+  margin-left: 40px;
+  vertical-align: top;
+}
+
+
+.repo-list__item {
+  padding: 10px;
+  border-bottom: 1px solid $gray;
+}
+
+.repo {
+  width: 100%;
+}
+
+.repo__link {
+  text-decoration: none;
+  color: $primary-color;
+  font-size: 18px;
+}
+
+.repo__info {
+  font-size: 14px;
+  color: darken($gray, 20%);
+}
+
+.divider {
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .repo-list {
+    padding-left: 0;
+  }
+  .user-repos, .user-info{
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+  .user-info {
+    text-align: center;
+  }
+}

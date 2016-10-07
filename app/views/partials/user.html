@@ -1,0 +1,28 @@
+<div class="user-info" ng-if="isDataAvailable">
+  <img src="{{user.avatar_url}}" alt="" height="200px">
+  <h1>
+    <a class="text-primary text-no-decoration" href="{{user.html_url}}" target="_blank">{{user.login}}</a>
+  </h1>
+  <h2>{{repos.length}} Repos</h2>
+</div>
+<div class="user-repos">
+  <div>
+    <ol class="repo-list">
+      <li class="repo-list__item" ng-repeat="repo in repos">
+        <div class="clearfix repo">
+          <a class="repo__link" href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
+          <span class="repo__info float-right hide-on-medium-below">(
+            <span>{{repo.language}}</span>
+            <span class="divider">|</span>
+            <span>{{repo.stargazers_count}} Stars</span>
+            <span class="divider">|</span>
+            <span>{{repo.forks_count}} Forks</span>
+          )</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>
+<div ng-if="!isDataAvailable">
+  <p class="text-large text-center">{{message}}</p>
+</div>

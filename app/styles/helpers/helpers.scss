@@ -1,0 +1,71 @@
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-large {
+  font-size: 24px;
+}
+
+.text-no-decoration {
+  text-decoration: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.form-element {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  label {
+    font-size: 12px;
+  }
+  input, select {
+    height: 32px;
+    width: 95%;
+    padding-left: 10px;
+    border: 1px solid $gray;
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+@media screen and (max-width: 540px) {
+  .hide-on-medium-below {
+    display: none;
+  }
+}
+

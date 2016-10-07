@@ -1,0 +1,24 @@
+<div class="search-container">
+  <input type="text" class="search-input"
+          ng-change="searchUser()"
+          ng-model="keyword"
+          ng-model-options="{ debounce: 200 }"
+          placeholder="Search Github Users" />
+  <div class="result-container">
+    <ul class="results-list">
+      <li class="results-list__item" ng-repeat="user in results" ng-click="selectUser(user)">
+        <div class="result-item clearfix">
+          <div class="result-item__image">
+            <img src="{{user.avatar_url}}" alt="" width="60px">
+          </div>
+          <div class="result-item__name">
+            <span>{{user.login}}</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="message-container" ng-if="message">
+    <p>{{message}}</p>
+  </div>
+</div>
