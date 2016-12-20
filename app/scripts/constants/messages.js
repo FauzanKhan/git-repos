@@ -4,5 +4,5 @@ app.constant('messages', {
     noRepos: "The user has no Repositories",
     inProgress: "Searching...",
     fetchingData: "Fetching Data...",
-    failedRequest: "Failed Request. Please Try Again!"
+  failedRequest: "Failed Request. Please Try Again!"
 });
