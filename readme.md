@@ -1,5 +1,7 @@
 # Code Challenge
 
+<a href="https://codeclimate.com/github/FauzanKhan/git-repos"><img src="https://codeclimate.com/github/FauzanKhan/git-repos/badges/gpa.svg" /></a>
+
 ## Dependencies
 * NodeJS (>=6.5)
 
